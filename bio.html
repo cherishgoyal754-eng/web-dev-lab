@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cherish Goyal | Semantic Bio (P5)</title>
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <style>
+    .bio-wrapper {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: var(--space-xl);
+      margin-top: var(--space-2xl);
+    }
+    .profile-sidebar {
+      background: var(--surface);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: var(--space-lg);
+      text-align: center;
+    }
+    .profile-initials {
+      width: 115px;
+      height: 115px;
+      margin: 0 auto var(--space-md);
+      border-radius: var(--radius-pill);
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: var(--font-xl);
+      font-weight: bold;
+      color: white;
+    }
+    .meta-box {
+      background: var(--bg-dark);
+      padding: var(--space-md);
+      border-radius: var(--radius-sm);
+      margin-top: var(--space-lg);
+      text-align: left;
+    }
+    .meta-box ul {
+      list-style-type: none;
+      margin-top: var(--space-xs);
+    }
+    .meta-box li {
+      padding: 3px 0;
+      font-size: var(--font-sm);
+      color: var(--text-muted);
+    }
+    .bio-header {
+      padding: var(--space-md) 0;
+      border-bottom: 1px solid var(--border-color);
+    }
+    .bio-footer {
+      margin-top: var(--space-2xl);
+      padding: var(--space-lg) 0;
+      border-top: 1px solid var(--border-color);
+      text-align: center;
+      font-size: var(--font-sm);
+      color: var(--text-muted);
+    }
+    @media (max-width: 768px) {
+      .bio-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Semantic Header -->
+  <header class="bio-header">
+    <div class="container" style="display: flex; justify-content: space-between; align-items: center;">
+      <a href="index.html" style="font-weight: bold;">← Back to Portfolio</a>
+      <span style="color: var(--primary); font-size: var(--font-sm);">Practical P5 Demo</span>
+    </div>
+  </header>
+
+  <!-- Semantic Main Landmark -->
+  <main class="container">
+    <div class="bio-wrapper">
+      
+      <!-- Article: Primary Narrative -->
+      <article>
+        <header>
+          <span style="color: var(--accent); text-transform: uppercase; font-size: var(--font-sm); font-weight: bold;">Student Bio</span>
+          <h1>Cherish Goyal</h1>
+          <p style="font-size: var(--font-lg); margin-top: 4px;">1st Semester B.Tech CSE • Bosscoder School of Technology</p>
+        </header>
+
+        <section style="margin-top: var(--space-xl);">
+          <h2>About Me</h2>
+          <p style="margin-top: var(--space-xs);">
+            Hello, I am Cherish Goyal! I am currently an undergraduate student in my 1st semester of Computer Science &amp; Engineering at Bosscoder School of Technology. I am studying modern front-end web engineering, version control using Git, and responsive CSS systems.
+          </p>
+          <p style="margin-top: var(--space-sm);">
+            This page fulfills Practical P5, highlighting the use of semantic HTML5 landmark tags (header, main, article, section, figure, figcaption, aside, and footer) to create accessible and maintainable web pages.
+          </p>
+        </section>
+
+        <!-- Education -->
+        <section style="margin-top: var(--space-xl);">
+          <h2>Education</h2>
+          <div style="margin-top: var(--space-sm); border-left: 2px solid var(--primary); padding-left: var(--space-md);">
+            <h4>B.Tech in Computer Science &amp; Engineering</h4>
+            <p><strong>Bosscoder School of Technology</strong> • 2026 - Present</p>
+            <p>1st Semester coursework in Programming, Problem Solving, and Web Foundations.</p>
+          </div>
+        </section>
+
+        <!-- Technical Goals -->
+        <section style="margin-top: var(--space-xl);">
+          <h2>Learning Focus</h2>
+          <ul style="margin-top: var(--space-xs); padding-left: 20px; color: var(--text-muted);">
+            <li>CSS Grid and Flexbox responsive layout systems</li>
+            <li>Writing semantic and screen-reader friendly markup</li>
+            <li>Professional Git branching workflows and command-line tools</li>
+          </ul>
+        </section>
+      </article>
+
+      <!-- Aside: Info Card -->
+      <aside>
+        <div class="profile-sidebar">
+          <figure>
+            <div class="profile-initials">CG</div>
+            <figcaption>
+              <strong>Cherish Goyal</strong><br>
+              <span style="font-size: var(--font-sm); color: var(--text-muted);">Bosscoder School of Technology</span>
+            </figcaption>
+          </figure>
+
+          <div class="meta-box">
+            <h3 style="font-size: var(--font-base); color: var(--text-main);">Fast Facts</h3>
+            <ul>
+              <li><strong>Program:</strong> B.Tech CSE</li>
+              <li><strong>Semester:</strong> 1st Semester</li>
+              <li><strong>College:</strong> Bosscoder School of Tech</li>
+              <li><strong>Lab:</strong> Web Development Practicals</li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </main>
+
+  <footer class="bio-footer">
+    <div class="container">
+      <p>&copy; 2026 Cherish Goyal • Bosscoder School of Technology</p>
+    </div>
+  </footer>
+
+</body>
+</html>
